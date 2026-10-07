@@ -38,12 +38,10 @@ The screens only show what the store gives them and tell it what the user did. I
 
 **State management**
 
-I used Flutter's built-in tools, a `ChangeNotifier` plus an `InheritedNotifier` (the `ArticleScope` class). When the store changes, the screens that read it rebuild. For an app this small, that's enough, and you don't have to learn a package like Provider or Riverpod first. If the app grows, moving to one of those is straightforward.
+I used Flutter's built-in tools, a `ChangeNotifier` plus an `InheritedNotifier` (the `ArticleScope` class). When the store changes, the screens that read it rebuilds it. 
 
 **Libraries**
 
 - **Flutter Material 3:** the standard look and ready-made parts like chips, dialogs, and bottom sheets, with light and dark mode for free.
-- **`shared_preferences`:** saves the articles as JSON on the device. It's the simplest way to make data persistent. For thousands of articles you'd switch to a database such as SQLite.
-- **`google_fonts`:** gives the articles a serif font so they read like articles. It's the only purely visual dependency, so it's easy to remove.
-
-I kept the dependencies to these two on purpose, so setup is quick and there's less that can break.
+- **`shared_preferences`:** saves the articles as JSON on the device. It's the simplest way to make data persistent.
+- **`google_fonts`:** gives the articles a serif font so they read like articles. 
