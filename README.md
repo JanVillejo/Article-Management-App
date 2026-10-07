@@ -3,7 +3,7 @@
 Name: Jan Antonette F. Villejo
 Stack Chosen: Flutter
 Time started: 10AM
-Time ended: 12PM
+Time ended: 1PM
 Partially done.
 
 A small Flutter app to create, view, edit, and delete articles. Each article has a title, author, category, and body. Everything is saved on the device.
